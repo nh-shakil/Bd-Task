@@ -1,0 +1,60 @@
+header {
+  position: relative;
+}
+
+header::before {
+  content: '';
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: -190px;
+  right: -80px;
+  background: #e6f9ef;
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+header .offer span {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+header .navbar-wrapper ul li {
+  padding: .5rem 1rem;
+}
+
+header .navbar-wrapper ul li a {
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  color: #212529 !important;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .hero-content h2 {
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+#hero .hero-content span {
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+#hero{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero-content{
+        h2{
+            line-height: 50px;
+            font-size: 36px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+        span{
+            font-weight: 400;
+        }
+    }
+}
