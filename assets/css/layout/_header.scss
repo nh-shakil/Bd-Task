@@ -1,4 +1,16 @@
 header {
+    &::before {
+        content: '';
+        width: 900px;
+        height: 900px;
+        position: absolute;
+        top: -190px;
+        right: -80px;
+        background: #e6f9ef;
+        transform: rotate(-13deg);
+        border-radius: 50px;
+        z-index: -1;
+    }
     .offer {
         display: flex;
         justify-content: center;
@@ -9,6 +21,7 @@ header {
         ul {
             li {
                 margin: 0 .8rem;
+
                 a {
                     font-weight: 500;
                     padding: 0.5rem 1.2rem;
