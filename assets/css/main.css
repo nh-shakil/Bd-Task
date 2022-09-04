@@ -1,41 +1,75 @@
-header {
-  position: relative;
+/*[===============
+      base style 
+  ===============]*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header::before {
-  content: '';
-  width: 900px;
-  height: 900px;
-  position: absolute;
-  top: -190px;
-  right: -80px;
-  background: #e6f9ef;
-  -webkit-transform: rotate(-13deg);
-          transform: rotate(-13deg);
-  border-radius: 50px;
-  z-index: -1;
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-header .offer span {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
+.nav-link, a {
+  text-decoration: none;
+  color: #000;
 }
 
-header .navbar-wrapper ul li {
-  padding: .5rem 1rem;
+.nav-link:hover, a:hover {
+  color: #000;
 }
 
-header .navbar-wrapper ul li a {
-  font-weight: 600;
-  padding: 0.5rem 1.2rem;
-  color: #212529 !important;
-  font-size: 17px;
+body {
   font-family: 'Poppins', sans-serif;
 }
 
-#hero {
-  height: 75vh;
+.midSaleBg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  border-radius: 0.2rem;
+}
+
+header .offer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,14 +81,14 @@ header .navbar-wrapper ul li a {
           align-items: center;
 }
 
-#hero .hero-content h2 {
-  line-height: 50px;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+header .navbar-wrapper ul li {
+  margin: 0 .8rem;
 }
 
-#hero .hero-content span {
-  font-weight: 400;
+header .navbar-wrapper ul li a {
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  color: #212529;
+  font-size: 17px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,68 @@
+/*[===============
+      base style 
+  ===============]*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+// Remove Default style tag
+*,
+*::before,
+*::after{
+ box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link,a{
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        color: #000;
+    }
+}
+
+
+// set default color 
+$primary_color: #37a001;
+
+
+// set default font
+body{
+    font-family: 'Poppins', sans-serif;  
+}
+
+
+// default animation class
+.midSaleBg {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.btn-sm{
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    border-radius: 0.2rem;
+}
