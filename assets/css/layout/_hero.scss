@@ -4,7 +4,10 @@
     min-height: 74vh;
     display: flex;
     align-items: center;
-
+    padding-top: 100px;
+    .text-green{
+        color: $primary_color;
+    }
     .hero-img-wrapper {
         position: relative;
 
@@ -26,6 +29,10 @@
                 font-size: 1.8rem;
                 color: rgb(41, 184, 65);
             }
+        }
+        .pulse-anim {
+            animation: pulse 2s infinite;
+            border-radius: 50%;
         }
 
         .banner_shap {
@@ -73,5 +80,28 @@
 
 	50% {
 		transform: translateY(25px);
+	}
+}
+
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+	}
+
+	5% {
+		transform: scale(1.01);
+	}
+
+	15% {
+		transform: scale(1);
+	}
+
+	70% {
+		box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
 	}
 }
