@@ -1,6 +1,6 @@
 @import '../base/common';
 
-#hero {
+#hero-secton{
     min-height: 74vh;
     display: flex;
     align-items: center;
@@ -104,4 +104,11 @@
 	100% {
 		box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
 	}
+}
+
+
+@media screen and (max-width: 992px) {
+    #hero-secton{
+        padding-top: 50px;
+    }
 }

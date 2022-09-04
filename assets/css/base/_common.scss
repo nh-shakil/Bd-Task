@@ -37,7 +37,7 @@ $primary_color: #37a001;
 // set default font
 body{
     font-family: 'Poppins', sans-serif;  
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -104,3 +104,14 @@ body{
     font-size: 19px;
     line-height: 30px;
 }
+
+
+// sticky navbar class css
+// .sticky{
+// 	position: fixed;
+// 	z-index: 99;
+// 	box-shadow: #777;
+// 	background: #fff;
+// 	top: 0;
+// 	left: 0;
+// }
