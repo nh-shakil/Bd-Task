@@ -282,8 +282,8 @@ body {
   right: -40px;
   top: -30px;
   z-index: -1;
-  -webkit-animation: move_shape 2s infinite;
-          animation: move_shape 2s infinite;
+  -webkit-animation: move_shape_top 2s infinite;
+          animation: move_shape_top 2s infinite;
 }
 
 #hero .hero-img-wrapper .banner-box {
@@ -295,15 +295,15 @@ body {
   border-radius: 20px;
   color: #fff;
   position: absolute;
-  -webkit-animation: move_bottom 2s infinite;
-          animation: move_bottom 2s infinite;
+  -webkit-animation: move_shape_bottom 2s infinite;
+          animation: move_shape_bottom 2s infinite;
 }
 
 #hero .hero-img-wrapper .banner-box h3 {
   font-size: 2rem;
 }
 
-@-webkit-keyframes move_shape {
+@-webkit-keyframes move_shape_top {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -314,7 +314,7 @@ body {
   }
 }
 
-@keyframes move_shape {
+@keyframes move_shape_top {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -325,7 +325,7 @@ body {
   }
 }
 
-@-webkit-keyframes move_bottom {
+@-webkit-keyframes move_shape_bottom {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -336,7 +336,7 @@ body {
   }
 }
 
-@keyframes move_bottom {
+@keyframes move_shape_bottom {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
