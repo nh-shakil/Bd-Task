@@ -116,6 +116,10 @@ body {
   padding: 100px 0;
 }
 
+.fs-title {
+  font-size: 2.5rem !important;
+}
+
 .sticky {
   position: fixed;
   z-index: 99;
@@ -264,6 +268,10 @@ body {
 
 .py_100 {
   padding: 100px 0;
+}
+
+.fs-title {
+  font-size: 2.5rem !important;
 }
 
 .sticky {
@@ -543,6 +551,10 @@ body {
   padding: 100px 0;
 }
 
+.fs-title {
+  font-size: 2.5rem !important;
+}
+
 .sticky {
   position: fixed;
   z-index: 99;
@@ -568,10 +580,6 @@ body {
   font-weight: 500;
   line-height: 1.2;
   display: block;
-}
-
-#glance div h3 {
-  font-size: 2rem;
 }
 
 #glance .glance-box {
