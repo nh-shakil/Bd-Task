@@ -1,5 +1,43 @@
 #solutation{
     div{
-       
+       p{
+         padding: 0 20rem;
+       }
+    }
+    .product_pills{
+        li{
+            button{
+                font-weight: 300;
+                padding: 0.5rem 1.2rem;
+                color: #0d940a;
+                font-size: 16px;
+                border: 1px solid #d4ecd4;
+                margin: 5px;
+                background: #d4ecd4;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
+// responsive
+@media screen and (max-width: 1200px) {
+    #solutation{
+        div{
+          p{
+            padding:  0 10rem;
+          }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #solutation{
+        div{
+          p{
+            padding:  0 3rem;
+          }
+        }
     }
 }
