@@ -176,40 +176,86 @@
                 <p class="info-text">We provide a time-worthy business solution to every type of business.
                     Find out your one and level up your success stairs.</p>
             </div>
-            <div class="row mt-5">
-                <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-tenth-tab" data-toggle="pill" href="#pills-tenth" role="tab"
-                            aria-controls="pills-tenth" aria-selected="false" href="#">Business</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-tenth-tab" data-toggle="pill" href="#pills-tenth" role="tab"
-                            aria-controls="pills-tenth" aria-selected="false" href="#">Business</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-tenth-tab" data-toggle="pill" href="#pills-tenth" role="tab"
-                            aria-controls="pills-tenth" aria-selected="false" href="#">Business</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-tenth-tab" data-toggle="pill" href="#pills-tenth" role="tab"
-                            aria-controls="pills-tenth" aria-selected="false" href="#">Business</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-tenth-tab" data-toggle="pill" href="#pills-tenth" role="tab"
-                            aria-controls="pills-tenth" aria-selected="false" href="#">Business</a>
-                    </li>
-                </ul>
-                <!-- tab content display -->
+            <div class="row my-5">
+                <div class="col-lg-12">
+                    <ul class="portfolio-link">
+                       <li data-filter="*">All Projects</li>
+                       <li data-filter=".business">Business</li>
+                       <li data-filter=".blockchain">Blockchain</li>
+                       <li data-filter=".shop">Shop</li>
+                       <li data-filter=".finach">Finach</li>
+                       <li data-filter=".education">Education</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+               <div class="portfolio-display">
+                   <div class="business">
+                       <div class="row">
+                          <div class="col-3">
+                             <a href="#">
+                               <img src="https://cdn.vectorstock.com/i/1000x1000/58/03/business-portfolio-with-icons-statistical-data-vector-17925803.webp" alt="">
+                             </a>
+                          </div>
 
+                          <div class="col-3">
+                            <a href="#">
+                              <img src="https://cdn.vectorstock.com/i/1000x1000/58/03/business-portfolio-with-icons-statistical-data-vector-17925803.webp" alt="">
+                            </a>
+                         </div>
+
+                         <div class="col-3">
+                            <a href="#">
+                              <img src="https://cdn.vectorstock.com/i/1000x1000/58/03/business-portfolio-with-icons-statistical-data-vector-17925803.webp" alt="">
+                            </a>
+                         </div>
+                       </div>
+                   </div>
+                 <!-- single portlio -->
+                 <div class="blockchain">
+                    <div class="row">
+                       <div class="col-3">
+                          <a href="#">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4wi8uo9o20FgSro_WTkNKM0p3TM2X_TPx5_DR3atOA&s" alt="">
+                          </a>
+                       </div>
+
+                       <div class="col-3">
+                         <a href="#">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4wi8uo9o20FgSro_WTkNKM0p3TM2X_TPx5_DR3atOA&s" alt="">
+                         </a>
+                      </div>
+
+                      <div class="col-3">
+                         <a href="#">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4wi8uo9o20FgSro_WTkNKM0p3TM2X_TPx5_DR3atOA&s" alt="">
+                         </a>
+                      </div>
+                    </div>
+                </div>
+               </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
 
 
-    <!--==============================-->
-    <script src="assets/plugins/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<!--==============================-->
+<script src="assets/plugins/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/jquery-3.6.1.min.js"></script>
+<script src="assets/plugins/isotope.pkgd.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+// init Isotope
+var $grid = $('.portfolio-display').isotope({
+  // options
+});
+// filter items on button click
+$('.portfolio-link').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+</script>
 </body>
-
 </html>
