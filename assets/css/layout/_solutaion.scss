@@ -1,4 +1,3 @@
-
 #solutation{
     div{
        .info-text{
@@ -29,20 +28,30 @@
 // responsive
 @media screen and (max-width: 1200px) {
     #solutation{
-        div{
-          p{
-            padding:  0 10rem;
-          }
+      div{
+        .info-text{
+          padding: 0 10rem;
         }
+     }
     }
 }
 
 @media screen and (max-width: 992px) {
     #solutation{
-        div{
-          p{
-            padding:  0 3rem;
-          }
+      div{
+        .info-text{
+          padding: 0 5rem;
         }
+     }
     }
+}
+
+@media screen and (max-width: 600px) {
+  #solutation{
+    div{
+      .info-text{
+        padding: 0 0rem;
+      }
+   }
+  }
 }
