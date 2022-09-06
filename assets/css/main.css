@@ -104,10 +104,6 @@ body {
   }
 }
 
-.rounded-img {
-  border-radius: .8rem;
-}
-
 .main-title {
   line-height: 50px;
   font-size: 36px;
@@ -135,6 +131,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.active {
+  background: #00158b !important;
+  color: #fff !important;
 }
 
 header::before {
@@ -264,10 +265,6 @@ body {
   }
 }
 
-.rounded-img {
-  border-radius: .8rem;
-}
-
 .main-title {
   line-height: 50px;
   font-size: 36px;
@@ -295,6 +292,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.active {
+  background: #00158b !important;
+  color: #fff !important;
 }
 
 #hero-secton {
@@ -493,10 +495,6 @@ body {
   }
 }
 
-.rounded-img {
-  border-radius: .8rem;
-}
-
 .main-title {
   line-height: 50px;
   font-size: 36px;
@@ -524,6 +522,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.active {
+  background: #00158b !important;
+  color: #fff !important;
 }
 
 #glance {
@@ -609,5 +612,30 @@ body {
   #solutation div p {
     padding: 0 3rem;
   }
+}
+
+#about {
+  padding: 70px 0;
+}
+
+#about .about-content span {
+  color: #00158b;
+}
+
+#about .about-content h2 span {
+  color: #000;
+}
+
+#about .about-content button {
+  background: #00158b;
+  border: 1px solid #00158b;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+#about .about-content button a {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

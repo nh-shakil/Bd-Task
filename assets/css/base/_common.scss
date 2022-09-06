@@ -2,7 +2,7 @@
       base style 
   ===============]*/
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 // Remove Default style tag
 *,
@@ -23,6 +23,7 @@ ul{
 ul{
 	list-style: none;
 }
+
 .nav-link,a{
     text-decoration: none;
     color: #000;
@@ -93,10 +94,6 @@ body{
 		background-position: 200% center;
 	}
 }
-
-.rounded-img{
-	border-radius: .8rem;
-}
 // title default style
 .main-title{
     line-height: 50px;
@@ -123,4 +120,8 @@ body{
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+.active{
+	background: $primary_color !important;
+	color: #fff !important;
 }
