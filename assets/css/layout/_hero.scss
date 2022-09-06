@@ -10,7 +10,9 @@
     }
     .hero-img-wrapper {
         position: relative;
-
+        img{
+            width: 100%;
+        }
         .translate-middle {
             position: absolute;
             left: 50%;
@@ -20,21 +22,7 @@
             height: 100px;
             border-radius: 50%;
             background: #fff;
-
-            i {
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                position: absolute;
-                font-size: 1.8rem;
-                color: rgb(41, 184, 65);
-            }
         }
-        .pulse-anim {
-            animation: pulse 2s infinite;
-            border-radius: 50%;
-        }
-
         .banner_shap {
             position: absolute;
             right: -40px;
@@ -45,7 +33,7 @@
 
         .banner-box {
             text-align: center;
-            background: #29B841;
+            background: $primary_color;
             max-width: 175px;
             bottom: -20px;
             left: -30px;
@@ -83,28 +71,6 @@
 	}
 }
 
-
-@keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
-	}
-
-	5% {
-		transform: scale(1.01);
-	}
-
-	15% {
-		transform: scale(1);
-	}
-
-	70% {
-		box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
-	}
-
-	100% {
-		box-shadow: 0 0 0 100px rgba(255, 255, 255, 0);
-	}
-}
 
 
 @media screen and (max-width: 992px) {
