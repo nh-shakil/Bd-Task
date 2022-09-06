@@ -571,7 +571,7 @@ body {
   color: #333;
 }
 
-#solutation div p {
+#solutation div .info-text {
   padding: 0 20rem;
 }
 
