@@ -638,4 +638,22 @@ body {
 #about .about-content button a {
   color: #fff;
 }
+
+#service {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#CBEDEE), to(#F3F2F3));
+  background-image: linear-gradient(to right top, #CBEDEE, #F3F2F3);
+}
+
+#service .service-box {
+  position: relative;
+}
+
+#service .service-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #d8f3d3;
+  z-index: 99;
+}
 /*# sourceMappingURL=main.css.map */

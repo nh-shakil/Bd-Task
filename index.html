@@ -497,16 +497,36 @@
             </div>
         </div>
     </section>
+<!-- about us section End -->
 
 
-    <!--==============================-->
-    <script src="assets/plugins/bootstrap.bundle.min.js"></script>
-    <script src="assets/plugins/jquery-3.6.1.min.js"></script>
-    <script src="assets/plugins/isotope.pkgd.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        // init Isotope
-        var $grid = $('.portfolio-display').isotope({
+<!-- service section start -->
+<section id="service" class="py_100">
+   <div class="container">
+      <div class="text-center mb-5">
+         <h2 class="fw-bold">Industry <span class="animate-text">We Serve</span></h2>
+         <p>Bridge Your Business with the Virtual World</p>
+      </div>
+      <div class="row">
+        <div class="col-2">
+           <div class="service-box py-4 bg-white text-center">
+              <img src="assets/media/automotive.png" alt="">
+              <p class="mt-3">FinTech</p>
+           </div>
+        </div>
+      </div>
+   </div>
+</section>
+
+
+<!--==============================-->
+<script src="assets/plugins/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/jquery-3.6.1.min.js"></script>
+<script src="assets/plugins/isotope.pkgd.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// init Isotope
+var $grid = $('.portfolio-display').isotope({
             // options
         });
         // filter items on button click
@@ -519,8 +539,6 @@
         $('.portfolio-link').on('click', 'li', function () {
             $(this).addClass('active').siblings.removeClass('active')
         });
-
-    </script>
+</script>
 </body>
-
 </html>
