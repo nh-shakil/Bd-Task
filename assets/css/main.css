@@ -133,7 +133,7 @@ body {
   width: 100%;
 }
 
-.active {
+.active-portfilio {
   background: #00158b !important;
   color: #fff !important;
 }
@@ -294,7 +294,7 @@ body {
   width: 100%;
 }
 
-.active {
+.active-portfilio {
   background: #00158b !important;
   color: #fff !important;
 }
@@ -524,7 +524,7 @@ body {
   width: 100%;
 }
 
-.active {
+.active-portfilio {
   background: #00158b !important;
   color: #fff !important;
 }
@@ -640,20 +640,11 @@ body {
 }
 
 #service {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#CBEDEE), to(#F3F2F3));
-  background-image: linear-gradient(to right top, #CBEDEE, #F3F2F3);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c6cbee), to(#F3F2F3));
+  background-image: linear-gradient(to right top, #c6cbee, #F3F2F3);
 }
 
 #service .service-box {
-  position: relative;
-}
-
-#service .service-box::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: #d8f3d3;
-  z-index: 99;
+  background: red;
 }
 /*# sourceMappingURL=main.css.map */
