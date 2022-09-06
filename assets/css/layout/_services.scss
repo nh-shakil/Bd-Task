@@ -1,6 +1,27 @@
 #service{
     background-image: linear-gradient(to right top, #c6cbee, #F3F2F3);
     .service-box{
-        background: red;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: block;
+            bottom: 0;
+            background: #a3aae1;
+            height: 0;
+            transition-duration: 0.4s;
+            z-index: 0;
+        }
+        &:hover::before{
+           height: 100%;
+        }
+        img{
+            position: relative;
+        }
+        p{
+            position: relative;
+        }
     }
 }

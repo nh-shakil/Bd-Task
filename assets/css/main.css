@@ -645,6 +645,32 @@ body {
 }
 
 #service .service-box {
-  background: red;
+  position: relative;
+}
+
+#service .service-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  bottom: 0;
+  background: #a3aae1;
+  height: 0;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  z-index: 0;
+}
+
+#service .service-box:hover::before {
+  height: 100%;
+}
+
+#service .service-box img {
+  position: relative;
+}
+
+#service .service-box p {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
