@@ -4,14 +4,15 @@
     min-height: 74vh;
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 70px;
     .text-green{
         color: $primary_color;
     }
     .hero-img-wrapper {
         position: relative;
+        text-align: center;
         img{
-            width: 100%;
+            width: 80%;
         }
         .translate-middle {
             position: absolute;
@@ -25,8 +26,8 @@
         }
         .banner_shap {
             position: absolute;
-            right: -40px;
-            top: -30px;
+            right: 40px;
+            top: 30px;
             z-index: -1;
             animation: move_shape_top 2s infinite;
         }
@@ -35,7 +36,7 @@
             text-align: center;
             background: $primary_color;
             max-width: 175px;
-            bottom: -20px;
+            bottom: 40px;
             left: -30px;
             border-radius: 20px;
             color: #fff;

@@ -351,7 +351,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 #hero-secton .text-green {
@@ -360,10 +360,11 @@ body {
 
 #hero-secton .hero-img-wrapper {
   position: relative;
+  text-align: center;
 }
 
 #hero-secton .hero-img-wrapper img {
-  width: 100%;
+  width: 80%;
 }
 
 #hero-secton .hero-img-wrapper .translate-middle {
@@ -380,8 +381,8 @@ body {
 
 #hero-secton .hero-img-wrapper .banner_shap {
   position: absolute;
-  right: -40px;
-  top: -30px;
+  right: 40px;
+  top: 30px;
   z-index: -1;
   -webkit-animation: move_shape_top 2s infinite;
           animation: move_shape_top 2s infinite;
@@ -391,7 +392,7 @@ body {
   text-align: center;
   background: #00158b;
   max-width: 175px;
-  bottom: -20px;
+  bottom: 40px;
   left: -30px;
   border-radius: 20px;
   color: #fff;
@@ -783,7 +784,7 @@ body {
 
 #cta a {
   background: #00158b;
-  border: 1px solid #00158b;
+  border: 2px solid #00158b;
   padding: 1rem 1.8rem;
   font-size: 1rem;
   margin: 5px;
