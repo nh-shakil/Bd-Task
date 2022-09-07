@@ -138,6 +138,28 @@ body {
   color: #fff !important;
 }
 
+.title-text {
+  padding: 0 25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-text {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title-text {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-text {
+    padding: 0 0rem;
+  }
+}
+
 header::before {
   content: '';
   width: 900px;
@@ -297,6 +319,28 @@ body {
 .active-portfilio {
   background: #00158b !important;
   color: #fff !important;
+}
+
+.title-text {
+  padding: 0 25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-text {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title-text {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-text {
+    padding: 0 0rem;
+  }
 }
 
 #hero-secton {
@@ -529,6 +573,28 @@ body {
   color: #fff !important;
 }
 
+.title-text {
+  padding: 0 25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-text {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title-text {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-text {
+    padding: 0 0rem;
+  }
+}
+
 #glance {
   background: #d5d9f2;
 }
@@ -574,10 +640,6 @@ body {
   color: #333;
 }
 
-#solutation div .info-text {
-  padding: 0 20rem;
-}
-
 #solutation .portfolio-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,24 +662,6 @@ body {
 
 #solutation .portfolio-display img {
   width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  #solutation div .info-text {
-    padding: 0 10rem;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #solutation div .info-text {
-    padding: 0 5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #solutation div .info-text {
-    padding: 0 0rem;
-  }
 }
 
 #about {

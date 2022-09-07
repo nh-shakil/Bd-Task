@@ -1,9 +1,4 @@
 #solutation{
-    div{
-       .info-text{
-         padding: 0 20rem;
-       }
-    }
     .portfolio-link{
         display: flex;
         justify-content: center;
@@ -25,33 +20,3 @@
     }
 }
 
-// responsive
-@media screen and (max-width: 1200px) {
-    #solutation{
-      div{
-        .info-text{
-          padding: 0 10rem;
-        }
-     }
-    }
-}
-
-@media screen and (max-width: 992px) {
-    #solutation{
-      div{
-        .info-text{
-          padding: 0 5rem;
-        }
-     }
-    }
-}
-
-@media screen and (max-width: 600px) {
-  #solutation{
-    div{
-      .info-text{
-        padding: 0 0rem;
-      }
-   }
-  }
-}
