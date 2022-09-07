@@ -177,16 +177,14 @@
                     Find out your one and level up your success stairs.</p>
             </div>
             <div class="row my-3">
-                <div class="col-12">
-                    <ul class="portfolio-link">
-                        <li data-filter="*">All Projects</li>
-                        <li data-filter=".business">Business</li>
-                        <li data-filter=".blockchain">Blockchain</li>
-                        <li data-filter=".shop">Shop</li>
-                        <li data-filter=".finach">Finach</li>
-                        <li data-filter=".Education">Education</li>
-                    </ul>
-                </div>
+                <ul class="portfolio-link">
+                    <li data-filter="*">All Projects</li>
+                    <li data-filter=".business">Business</li>
+                    <li data-filter=".blockchain">Blockchain</li>
+                    <li data-filter=".shop">Shop</li>
+                    <li data-filter=".finach">Finach</li>
+                    <li data-filter=".Education">Education</li>
+                </ul>
             </div>
             <div class="portfolio-display">
                 <div class="business">
@@ -603,58 +601,51 @@
     <!-- testimonial section End -->
 
     <!---call to action Start -->
-    <section id="cta">
+    <section id="cta" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(assets/media/cta.jpg)">
         <h1 class="fs-title">Connect with us <br> Anywhere From The World</h1>
         <a href="#">CONTACT US</a>
     </section>
     <!---call to action End --> 
 
 
-    <!--==============================-->
-    <script src="assets/plugins/bootstrap.bundle.min.js"></script>
-    <script src="assets/plugins/jquery-3.6.1.min.js"></script>
-    <script src="assets/plugins/isotope.pkgd.min.js"></script>
-    <script src="assets/plugins/owl.carousel.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        // init Isotope
-        var $grid = $('.portfolio-display').isotope({
-            // options
-        });
-        // filter items on button click
-        $('.portfolio-link').on('click', 'li', function () {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
-
-        // filter items on active
-        $('.portfolio-link').on('click', 'li', function () {
-            $(this).addClass('active-portfilio').siblings.removeClass('active-portfilio')
-        });
-    </script>
-
-    <!-- owl slider script -->
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 15,
-            autoplay: true,
-            dots: false,
-            autoplayTimeout: 3000,
-            nav: false,
-            responsive: {
-                12000: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                },
-                900: {
-                    items: 1
-                }
-            }
-        })
-    </script>
+<!--==============================-->
+<script src="assets/plugins/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/jquery-3.6.1.min.js"></script>
+<script src="assets/plugins/isotope.pkgd.min.js"></script>
+<script src="assets/plugins/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // init Isotope
+  var $grid = $('.portfolio-display').isotope({
+    // options
+});
+  // filter items on button click
+$('.portfolio-link').on('click', 'li', function () {
+  var filterValue = $(this).attr('data-filter');
+   $grid.isotope({ filter: filterValue });
+});
+</script>
+<!-- owl slider script -->
+<script>
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 15,
+    autoplay: true,
+    dots: false,
+    autoplayTimeout: 3000,
+    nav: false,
+    responsive: {
+       12000: {
+       items: 2
+    },
+     1000: {
+      items: 3
+    },
+     900: {
+      items: 1
+    }
+  }           
+})
+</script>
 </body>
-
 </html>
